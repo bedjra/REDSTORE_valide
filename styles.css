@@ -1,0 +1,54 @@
+.contain{
+    background-color: white;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+
+/* Style des paragraphes */
+p {
+    color: #555; /* Couleur du texte */
+    font-size: 16px;
+}
+
+.about-us {
+    max-width: 1200px;
+    margin: 50px auto;
+    margin-left:15px ;
+    font-family: Arial, sans-serif;
+}
+
+.about-us section {
+    margin-bottom: 30px;
+}
+
+.about-us h1, .about-us h2 {
+    color: #ff4d4d;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ff4d4d;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.about-us p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.about-us ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-us ul li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.about-us ul li strong {
+    color: #ff4d4d;
+}

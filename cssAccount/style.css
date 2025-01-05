@@ -1,0 +1,142 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* espace entre l'image et le texte */
+    padding: 50px;
+    background-color: #ecc3c3;
+    ;
+
+}
+
+
+
+.contenthome {
+    max-width: 50%;
+    /* Limite la largeur pour que le texte ne prenne pas trop de place */
+}
+
+.contenthome h4 {
+    font-size: 50px
+}
+
+.contenthome p {
+    font-size: 17px
+}
+
+.contenthome p {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.media img {
+    margin-right: 10px;
+    height: 635px;
+}
+
+.contenthome .exp {
+    background-color: rgb(243, 26, 26);
+    display: inline-block;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+
+}
+
+.exp:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .home {
+        padding: 50px;
+    }
+
+    .contenthome h4 {
+        font-size: 40px;
+    }
+
+    .contenthome p {
+        font-size: 15px;
+    }
+
+    .media img {
+        height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .contenthome {
+        
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .contenthome h4 {
+        font-size: 35px;
+    }
+
+    .media img {
+        height: 400px;
+        margin-right: 0;
+    }
+
+    .contenthome .exp {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenthome h4 {
+        padding-top: 50px;
+        font-size: 28px;
+    }
+
+    .contenthome p {
+        font-size: 14px;
+    }
+    .home  {
+        width: 400px;
+    }
+
+    .media img {
+        height: 300px;
+    }
+
+    .contenthome .exp {
+        padding: 6px 15px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .contenthome h4 {
+        font-size: 24px;
+    }
+
+    .contenthome p {
+        font-size: 12px;
+    }
+
+    .media img {
+        height: 250px;
+    }
+
+    .contenthome .exp {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+}

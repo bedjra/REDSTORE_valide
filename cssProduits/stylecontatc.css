@@ -1,0 +1,87 @@
+
+
+.media img {
+    height: 150px;
+    width: 500px;
+    object-fit: cover; /* S'assure que l'image garde une bonne apparence */
+    max-width: 100%; /* Rend l'image fluide pour les petits écrans */
+}
+
+@media screen and (max-width: 768px) {
+    .media img {
+        height: auto; /* Ajuste automatiquement la hauteur pour garder le ratio */
+        width: 100%; /* L'image occupe toute la largeur de l'écran */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .media img {
+        height: auto;
+        width: 100%; /* S'ajuste à la largeur du conteneur sur les très petits écrans */
+    }
+}
+
+
+.home{
+    padding-top: 145px;
+}
+
+
+  
+  .contact-form {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .contact-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .contact-form input, 
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .contact-form textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e10b24;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: red;
+  }
+  
+  #status {
+    text-align: center;
+    margin-top: 10px;
+    color: #333;
+  }
+  

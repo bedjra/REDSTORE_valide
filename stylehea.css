@@ -1,0 +1,44 @@
+.menu {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    position: relative; /* Nécessaire pour le pseudo-élément */
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black; /* Couleur par défaut */
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.menu li img {
+    width: 24px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.menu li.active a {
+    color: red; /* Couleur du texte de l'élément actif */
+}
+
+.menu li.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Positionnement sous le texte */
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: white; /* Couleur du trait */
+    border-radius: 1px;
+    transition: width 0.3s ease;
+}
+
+
+

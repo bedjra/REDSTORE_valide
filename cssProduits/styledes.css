@@ -1,0 +1,251 @@
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Mettre les éléments aux extrémités */
+    align-items: center; /* Aligner verticalement */
+    margin-bottom: 20px; /* Ajout d'espace sous la section */
+}
+
+.highlight {
+    color: red; /* Exemple de style pour le span */
+}
+
+
+
+select {
+    margin-top: 70px;
+    font-size: 16px;
+    margin-right: 100px;
+}
+.highlight {
+    border-bottom: 4px solid red;
+    display: inline-block;
+    padding-bottom: 5px;
+    /* Espacement entre le texte et le trait */
+}
+
+h2 {
+    margin-left: 150px;
+    padding-top: 80px;
+    font-size: 20px;
+}
+
+
+
+
+.cont {
+    display: flex;
+    justify-content: center;
+    /* Centrer tous les produits */
+    align-items: flex-start;
+    /* Aligner les éléments en haut */
+    gap: 30px;
+    /* Augmenter l'espacement entre les produits */
+    flex-wrap: wrap;
+    /* Permet de passer à la ligne */
+}
+
+
+
+#destination {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Augmenter l'espace entre les produits */
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .conten {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px; /* Espace supplémentaire entre les éléments */
+  }
+  
+  .product {
+    width: 250px; /* Augmenter la largeur des boîtes */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .bo {
+    width: 100%;
+    height: 300px; /* Augmenter la hauteur de l'image */
+  }
+  
+  .bo img {
+    width: 100%;
+    height: 100%; /* L'image prend toute la hauteur de .bo */
+    object-fit: cover;
+    border-radius: 8px; /* Ajout d'un rayon de bordure pour des coins arrondis */
+  }
+  
+  .details {
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 2px solid #ddd; /* Séparation plus marquée entre l'image et les détails */
+    border-radius: 0 0 8px 8px; /* Coins arrondis pour le bas */
+  }
+  
+  .details .name {
+    font-weight: bold;
+    font-size: 18px; /* Augmenter la taille du texte */
+    margin: 10px 0;
+  }
+  
+  .rating {
+    font-size: 20px; /* Agrandir la taille des étoiles */
+  }
+  
+  .star {
+    color: rgb(255, 0, 25);
+  }
+  
+  .price {
+    font-size: 20px; /* Augmenter la taille du prix */
+    color: #28a745; /* Une couleur plus vive pour le prix */
+    margin-top: 10px;
+  }
+  
+  .product:hover {
+    transform: translateY(-15px); /* Effet de soulèvement plus marqué */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  
+  @media screen and (max-width: 768px) {
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column; /* Colonne pour les sections principales */
+        align-items: center; /* Centre les éléments horizontalement */
+        justify-content: center;
+        gap: 20px; /* Ajoute de l'espace entre les lignes */
+    }
+  
+    /* Les divs "log" sur la même ligne */
+    .log {
+        flex: 1 1 50%; /* Prend 50% de l'espace sur une ligne */
+        text-align: center; /* Centre le contenu */
+    }
+  
+    /* Les listes "men" sur la même ligne */
+    .men {
+        flex: 1 1 50%; /* Prend 50% de l'espace sur une ligne */
+        display: flex;
+        flex-direction: column; /* Les éléments à l'intérieur restent en colonne */
+        align-items: center; /* Centre les éléments */
+        gap: 5px;
+    }
+  
+    /* Texte dans les "men" */
+    .men li {
+        text-align: left;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center; /* Centre les éléments horizontalement */
+        gap: 10px; /* Espace entre les lignes */
+    }
+  
+    /* Les divs "log" sur la même ligne */
+    .log {
+        flex: 1 1 50%; /* Prend 50% de l'écran */
+        text-align: center; /* Centre le contenu */
+    }
+  
+    /* Les listes "men" sur la même ligne */
+    .men {
+        flex: 1 1 50%; /* Prend 50% de l'écran */
+        display: flex;
+        flex-direction: column; /* Les éléments à l'intérieur restent en colonne */
+        align-items: center; /* Centre les éléments */
+    }
+  
+    .men li {
+        text-align: left;
+    }
+
+    h2 {
+        margin-left: 10px;
+        padding-top: 80px;
+        font-size: 20px;
+    }
+
+    select {
+        margin-top: 70px;
+        font-size: 16px;
+        margin-right: 10px;
+    }
+    
+  }
+  
+  
+  /* Responsiveness */
+  @media screen and (max-width: 768px) {
+      .conten {
+          justify-content: center;
+          gap: 15px;
+      }
+  
+      .product {
+          width: 45%; /* 2 produits par ligne */
+      }
+  }
+  
+  @media screen and (max-width: 480px) {
+      .conten {
+          flex-direction: column;
+          align-items: center;
+      }
+  
+      .product {
+          width: 100%; /* 1 produit par ligne */
+      }
+  }
+
+  
+/*pagination */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    gap: 10px; /* Espacement entre les éléments */
+  }
+  
+  .page,
+  .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Taille du carré */
+    height: 40px; /* Taille du carré */
+    border: 2px solid #000; /* Bordure noire */
+    border-radius: 6px; /* Coins légèrement arrondis */
+    background-color: #ffffff; /* Couleur de fond */
+    color: #000; /* Couleur du texte */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transition pour les effets au survol */
+  }
+  
+  .page:hover,
+  .arrow:hover {
+    background-color: red; /* Couleur de fond au survol */
+    color: #ffffff; /* Couleur du texte au survol */
+  }
+  
+  .arrow {
+    font-size: 20px;
+  }
+  

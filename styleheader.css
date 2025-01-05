@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9px;
+}
+
+
+.responsive-menu {
+    display: none;
+}
+
+
+header {
+    background-color: #d69797;;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 5%;
+
+}
+
+
+
+
+
+img{
+    height: 50px;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu img{
+    height: 30px;
+}
+
+.menu li {
+    margin: 0 15px;
+    list-style-type: none;
+}
+
+
+.menu li a {
+    color: #090101;
+    font-size: 14px;
+}
+
+
+
+
+/*Responsive*/
+@media (max-width:750px) {
+    header .menu {
+        display: none;
+    }
+
+    .btn-reservation {
+        display: none;
+    }
+
+    
+
+    /*Responsive menu*/
+    .responsive-menu {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .responsive-menu::after {
+        position: absolute;
+        content: "";
+        height: 3px;
+        background-color: black;
+        width: 28px;
+        box-shadow: 0 10px 0 black;
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
+
+    .responsive-menu.active::after {
+        box-shadow: 0 0 0 black;
+        transform: rotate(45deg);
+    }
+
+    .responsive-menu::before {
+        position: absolute;
+        content: "";
+        height: 3px;
+        background-color: black;
+        width: 28px;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+
+    .responsive-menu.active::before {
+        transform: rotate(-45deg);
+    }
+
+    header .menu.responsive {
+        display: flex;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        flex-direction: column;
+        background-color: #b04343;
+        align-items: unset;
+        animation: animate-menu 1s forwards;
+    }
+
+    header .menu.responsive li {
+        margin: 20px;
+        width: 100px;
+        padding-left: 20px;
+    }
+
+    @keyframes animate-menu {
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(100%);
+        }
+    }
+}
